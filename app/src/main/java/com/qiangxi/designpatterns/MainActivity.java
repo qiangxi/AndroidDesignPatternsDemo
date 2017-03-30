@@ -22,9 +22,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageLoader.bind(new ImageView(this), "");
         testBuilder();
         tesFactory();
+        testStrategy();
+    }
+
+    private void testStrategy() {
+        ImageLoader.bind(new ImageView(this), "");
     }
 
     private void tesFactory() {
